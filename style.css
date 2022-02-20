@@ -11,8 +11,11 @@ table {
     color: black;
     background-color: rgb(184, 182, 182); 
     text-align: center; 
-    border: solid rgb(83, 74, 74); 
+    border-collapse: collapse;
     letter-spacing: .3em;
+}
+td, th {
+    border: solid rgb(100, 95, 95);
 }
 body {
     color: white;
@@ -27,3 +30,27 @@ a {
 form {
     text-align: center;
 }
+label:hover {
+    color: red;
+}
+input[type="checkbox"]:checked {
+    box-shadow: 0 0 0 3px blue;
+}
+a:visited {
+    color: hotpink;
+}
+/* input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+span, label {
+    position:relative;
+    top: 0px;
+    left: 0px;
+    height: 24px;
+    width: 24px;
+    background-color: transparent;
+    border-radius: 5px;
+    border: 2px solid white;
+} */

@@ -1,7 +1,9 @@
 <!DOCTYPE html>
-<hmtl>
+<hmtl lang="en">
 
     <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width" , initial-scale="1.0">
         <title>H. S. Torres</title>
         <link rel="stylesheet" href="style.css">
     </head>
@@ -50,18 +52,22 @@
                 </ul>
             </section>
             <section>
-                <h2>The Colors of Magic the Gathering</h2>
+
                 <table>
                     <thead>
                         <tr>
+                            <th colspan="11" scope="col" rowspan="2">Colors of Magic the Gathering</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th rowspan="2" scope="rowgroup">Mono Colors</th>
                             <th colspan="2">White</th>
                             <th colspan="2">Blue</th>
                             <th colspan="2">Black</th>
                             <th colspan="2">Red</th>
                             <th colspan="2">Green</th>
                         </tr>
-                    </thead>
-                    <tbody>
                         <tr>
                             <td colspan="2"><img
                                     src="https://static.wikia.nocookie.net/mtgsalvation_gamepedia/images/8/8e/W.svg/revision/latest?cb=20160125094923"
@@ -85,8 +91,9 @@
                             </td>
                         </tr>
                     </tbody>
-                    <thead>
+                    <tbody>
                         <tr>
+                            <th rowspan="2" scope="rowgroup">Dual Colors</th>
                             <th>Azorius</th>
                             <th>Dimir</th>
                             <th>Rakdos</th>
@@ -98,8 +105,6 @@
                             <th>Boros</th>
                             <th>Simic</th>
                         </tr>
-                    </thead>
-                    <tbody>
                         <tr>
                             <td>
                                 <img src="https://static.wikia.nocookie.net/mtgsalvation_gamepedia/images/3/37/Azorius_Logo.png/revision/latest?cb=20140906165549"
@@ -143,8 +148,9 @@
                             </td>
                         </tr>
                     </tbody>
-                    <thead>
+                    <tbody>
                         <tr>
+                            <th rowspan="2" scope="rowgroup">Tri Colors</th>
                             <th>Bant</th>
                             <th>Esper</th>
                             <th>Grixis</th>
@@ -156,8 +162,6 @@
                             <th>Mardu</th>
                             <th>Temur</th>
                         </tr>
-                    </thead>
-                    <tbody>
                         <tr>
                             <td><img src="https://cdn1.dotesports.com/wp-content/uploads/2019/07/27155133/ala-163-clarion-ultimatum.jpg"
                                     width="10%" alt="MTG Bant"></td>
@@ -186,37 +190,52 @@
                     <h2>
                         Which Color(s) and/or Color-Pair(s) are your favorite?
                     </h2>
-                    <form action="https://www.reddit.com/search">
-                        <div>
+                    <form action="https://www.reddit.com/search" required>
+                        <div class="mono-colors">
                             <label for="white">White</label>
                             <input type="checkbox" id="white" name="q" value="MTG White">
+                            <span></span>
+
                             <label for="blue">Blue</label>
                             <input type="checkbox" id="blue" name="q" value="MTG Blue">
-                            <label for="black">Black</label><input type="checkbox" id="black" name="q"
-                                value="MTG Black">
-                            <label for="red">Red</label><input type="checkbox" id="red" name="q" value="MTG Red">
-                            <label for="green">Green</label><input type="checkbox" id="green" name="q"
-                                value="MTG Green">
+
+                            <label for="black">Black</label>
+                            <input type="checkbox" id="black" name="q" value="MTG Black">
+
+                            <label for="red">Red</label>
+                            <input type="checkbox" id="red" name="q" value="MTG Red">
+
+                            <label for="green">Green</label>
+                            <input type="checkbox" id="green" name="q" value="MTG Green">
                         </div>
                         <div>
                             <label for="azorius">Azorius</label><input type="checkbox" id="azorius" name="q"
                                 value="MTG Azorius">
+
                             <label for="dimir">Dimir</label><input type="checkbox" id="dimir" name="q"
                                 value="MTG Dimir">
+
                             <label for="rakdos">Rakdos</label><input type="checkbox" id="rakdos" name="q"
                                 value="MTG Rakdos">
+
                             <label for="gruul">Gruul</label><input type="checkbox" id="gruul" name="q"
                                 value="MTG Gruul">
+
                             <label for="selesnya">Selesnya</label><input type="checkbox" id="selesnya" name="q"
                                 value="MTG Selesnya">
+
                             <label for="orzhov">Orzhov</label><input type="checkbox" id="orzhov" name="q"
                                 value="MTG Orzhov">
+
                             <label for="izzet">Izzet</label><input type="checkbox" id="izzet" name="q"
                                 value="MTG Izzet">
+
                             <label for="golgari">Golgari</label><input type="checkbox" id="golgari" name="q"
                                 value="MTG Golgari">
+
                             <label for="boros">Boros</label><input type="checkbox" id="boros" name="q"
                                 value="MTG Boros">
+
                             <label for="simic">Simic</label><input type="checkbox" id="simic" name="q"
                                 value="MTG Simic">
                         </div>
@@ -225,20 +244,26 @@
 
                             <label for="esper">Esper</label><input type="checkbox" id="esper" name="q"
                                 value="MTG Esper">
+
                             <label for="grixis">Grixis</label><input type="checkbox" id="grixis" name="q"
                                 value="MTG Grixis">
+
                             <label for="jund">Jund</label><input type="checkbox" id="jund" name="q" value="MTG Jund">
 
                             <label for="naya">Naya</label><input type="checkbox" id="naya" name="q" value="MTG Naya">
 
                             <label for="azban">Azban</label><input type="checkbox" id="azban" name="q"
                                 value="MTG Azban">
+
                             <label for="jeskai">Jeskai</label><input type="checkbox" id="jeskai" name="q"
                                 value="MTG Jeskai">
+
                             <label for="sultai">Sultai</label><input type="checkbox" id="sultai" name="q"
                                 value="MTG Sultai">
+
                             <label for="mardu">Mardu</label><input type="checkbox" id="mardu" name="q"
                                 value="MTG Mardu">
+
                             <label for="temur">Temur</label><input type="checkbox" id="temur" name="q"
                                 value="MTG Temur">
                         </div>
