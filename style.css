@@ -7,19 +7,40 @@ h2{
     color: rgb(90, 26, 26);
     text-align: center;
 }
+h2.color_question {
+    background-color: aliceblue;
+    padding: 1em ;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 1em;
+}
 table {
+    margin-left: auto; /* margin-left and margin-right is used for centering this table */
+    margin-right: auto;
+    width: auto;
     color: black;
     background-color: rgb(184, 182, 182); 
     text-align: center; 
     border-collapse: collapse;
     letter-spacing: .3em;
+    border-style: inset;
+    border-color: rgb(58, 64, 73);
+    border-width: .5em;
+    
+    
+    
 }
-td, th {
-    border: solid rgb(100, 95, 95);
+table td, table th {
+    border:  .2em solid rgb(100, 95, 95);
+}
+thead th {
+    padding: .7em;
+    font-size: 1.8em;
 }
 body {
     color: white;
     background-color: black;
+    margin: 2em;
 }
 header {
     text-align: center;
@@ -34,11 +55,16 @@ label:hover {
     color: red;
 }
 input[type="checkbox"]:checked {
-    box-shadow: 0 0 0 3px blue;
+    box-shadow: 0 0 0 .2em blue;
 }
 a:visited {
     color: hotpink;
 }
+button {
+    margin-top: 1em;
+}
+
+
 /* input {
     position: absolute;
     opacity: 0;
