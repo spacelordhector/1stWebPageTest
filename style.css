@@ -7,7 +7,7 @@ h2{
     color: rgb(90, 26, 26);
     text-align: center;
 }
-h2.color_question {
+h2.color_question { /* This is for the h2 header before the table.*/
     background-color: aliceblue;
     padding: 1em ;
     margin-left: 20%;
@@ -17,7 +17,7 @@ h2.color_question {
 table {
     margin-left: auto; /* margin-left and margin-right is used for centering this table */
     margin-right: auto;
-    width: auto;
+    /*This is where I had width added.*/
     color: black;
     background-color: rgb(184, 182, 182); 
     text-align: center; 
@@ -30,16 +30,34 @@ table {
     
     
 }
-table td, table th {
+table td, table th { /* This [element] [element] is to show that it only effects the child that is inside the specified parent.*/
     border:  .2em solid rgb(100, 95, 95);
 }
 thead th {
     padding: .7em;
     font-size: 1.8em;
 }
+th { /*This is where I add transtions for the table headers.*/
+    transition-property: font-size;
+    transition-duration: 2s;
+    transition-timing-function: cubic-bezier(0.83, 0, 0.17, 1);
+}
+th:hover{
+    font-size: 1.5em;
+}
+table img {/*This is where I add transitions to the images within the table.*/
+    width: 1em;
+    height: 1em;
+    transition-property: width, height ;
+    transition-duration: 1s;
+}
+table img:hover{
+    width: 10em;
+    height: 11em;
+}
 body {
     color: white;
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.9); /*Might delete that opacity at rgba. */
     margin: 2em;
 }
 header {
@@ -62,6 +80,28 @@ a:visited {
 }
 button {
     margin-top: 1em;
+    transform: skew(20deg);
+    background: none;
+    color:rgb(167, 124, 16);
+    border: 2px solid;
+    padding: .5em 1em;
+    font-size: 1em;
+    transition-duration: .5s;
+    transition-property: border-color, color, box-shadow ;
+}
+button:hover {
+    border-color: rgb(119, 9, 9);
+    color: white;
+    box-shadow: -.25em -.05em 0 .3em rgb(119, 9, 9);
+    transform: translateY(-0.25em) skew(20deg);
+    cursor: pointer;
+}
+.fixed-nav{
+    width: auto;
+    margin: auto;
+    background-color: whitesmoke;
+    color: black;
+    position: fixed;
 }
 
 
