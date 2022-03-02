@@ -2,10 +2,18 @@ h1 {
     color: rgb(167, 124, 16);
     text-align: center;
     text-decoration: underline overline;
+    margin-bottom: .5em;
+
 }
 h2{
     color: rgb(90, 26, 26);
     text-align: center;
+    margin-top: .5em;
+}
+h1, h2 { /*Adding font from google fonts. Not scaling well.*/
+    font-family: 'League Gothic', sans-serif;
+    font-size: 3em;
+
 }
 h2.color_question { /* This is for the h2 header before the table.*/
     background-color: aliceblue;
@@ -13,6 +21,10 @@ h2.color_question { /* This is for the h2 header before the table.*/
     margin-left: 20%;
     margin-right: 20%;
     margin-top: 1em;
+}
+main {/*Font from google fonts. Again, not scaling well.*/
+    font-family: 'League Gothic', sans-serif;
+    font-size: 1.3em;
 }
 table {
     margin-left: auto; /* margin-left and margin-right is used for centering this table */
@@ -78,7 +90,7 @@ input[type="checkbox"]:checked {
 a:visited {
     color: hotpink;
 }
-button {
+button {/*This is part of the form and the "fancy button hover effect codeAlong"*/
     margin-top: 1em;
     transform: skew(20deg);
     background: none;
@@ -95,13 +107,25 @@ button:hover {
     box-shadow: -.25em -.05em 0 .3em rgb(119, 9, 9);
     transform: translateY(-0.25em) skew(20deg);
     cursor: pointer;
-}
-.fixed-nav{
-    width: auto;
+} /*This is where the "codeAlong" ends.*/
+.fixed-nav {
     margin: auto;
-    background-color: whitesmoke;
-    color: black;
-    position: fixed;
+    width: 90%;
+    height: auto;
+    border: 3px solid white;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    flex-basis: 100px;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+.navigator{
+    width: 50%;
+    height: 100%;
+    border: 2px solid blue;
 }
 
 
