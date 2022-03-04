@@ -110,21 +110,26 @@ button:hover {
 } /*This is where the "codeAlong" ends.*/
 .fixed-nav {
     margin: auto;
-    width: 90%;
-    height: auto;
+    /* width: 90%;
+    height: auto; */
     border: 3px solid white;
     display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-around;
-    align-items: center;
-    flex-basis: 100px;
-    flex-grow: 1;
-    flex-shrink: 1;
+    justify-content: space-evenly;
+    
+    
+}
+@media (max-width: 380px) {
+    .fixed-nav {
+        flex-direction: column;
+    }
+}
+@media (max-width: 380px) {
+    table, thead, tbody, th, td, tr {
+        display: block;
+    }
 }
 .navigator{
-    width: 50%;
-    height: 100%;
+   
     border: 2px solid blue;
 }
 
