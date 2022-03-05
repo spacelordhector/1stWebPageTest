@@ -9,7 +9,13 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=League+Gothic&family=Vampiro+One&display=swap"
             rel="stylesheet">
+        <!--Google Fonts Link.-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <!--Bootstrap CSS-->
         <link rel="stylesheet" href="style.css">
+        <!--Link to my css page.-->
+
     </head>
 
     <body>
@@ -206,84 +212,117 @@
                         Which Color(s) and/or Color-Pair(s) are your favorite?
                     </h2>
                     <form action="https://www.reddit.com/search" required>
-                        <div class="mono-colors">
+                        <div>
                             <!--Mono color checkboxes.-->
-                            <label for="white">White</label>
-                            <input type="checkbox" id="white" name="q" value="MTG White">
-                            <span></span>
-
-                            <label for="blue">Blue</label>
-                            <input type="checkbox" id="blue" name="q" value="MTG Blue">
-
-                            <label for="black">Black</label>
-                            <input type="checkbox" id="black" name="q" value="MTG Black">
-
-                            <label for="red">Red</label>
-                            <input type="checkbox" id="red" name="q" value="MTG Red">
-
-                            <label for="green">Green</label>
-                            <input type="checkbox" id="green" name="q" value="MTG Green">
+                            <div class="mono-colors form-check form-check-inline">
+                                <label class="form-check-label" for="white">White</label>
+                                <input class="form-check-input" type="checkbox" id="white" name="q" value="MTG White">
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <label class="form-check-label" for="blue">Blue</label>
+                                <input class="form-check-input" type="checkbox" id="blue" name="q" value="MTG Blue">
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <label class="form-check-label" for="black">Black</label>
+                                <input class="form-check-input" type="checkbox" id="black" name="q" value="MTG Black">
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <label class="form-check-label" for="red">Red</label>
+                                <input class="form-check-input" type="checkbox" id="red" name="q" value="MTG Red">
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <label class="form-check-label" for="green">Green</label>
+                                <input class="form-check-input" type="checkbox" id="green" name="q" value="MTG Green">
+                            </div>
                         </div>
                         <div>
                             <!--Dual colors chechboxes.-->
-                            <label for="azorius">Azorius</label><input type="checkbox" id="azorius" name="q"
-                                value="MTG Azorius">
-
-                            <label for="dimir">Dimir</label><input type="checkbox" id="dimir" name="q"
-                                value="MTG Dimir">
-
-                            <label for="rakdos">Rakdos</label><input type="checkbox" id="rakdos" name="q"
-                                value="MTG Rakdos">
-
-                            <label for="gruul">Gruul</label><input type="checkbox" id="gruul" name="q"
-                                value="MTG Gruul">
-
-                            <label for="selesnya">Selesnya</label><input type="checkbox" id="selesnya" name="q"
-                                value="MTG Selesnya">
-
-                            <label for="orzhov">Orzhov</label><input type="checkbox" id="orzhov" name="q"
-                                value="MTG Orzhov">
-
-                            <label for="izzet">Izzet</label><input type="checkbox" id="izzet" name="q"
-                                value="MTG Izzet">
-
-                            <label for="golgari">Golgari</label><input type="checkbox" id="golgari" name="q"
-                                value="MTG Golgari">
-
-                            <label for="boros">Boros</label><input type="checkbox" id="boros" name="q"
-                                value="MTG Boros">
-
-                            <label for="simic">Simic</label><input type="checkbox" id="simic" name="q"
-                                value="MTG Simic">
+                            <div class="dual-colors form-check form-check-inline">
+                                <label class="form-check-label" for="azorius">Azorius</label>
+                                <input class="form-check-input" type="checkbox" id="azorius" name="q"
+                                    value="MTG Azorius">
+                            </div>
+                            <div class="dual-colors form-check form-check-inline">
+                                <label class="form-check-label" for="dimir">Dimir</label>
+                                <input class="form-check-input" type="checkbox" id="dimir" name="q" value="MTG Dimir">
+                            </div>
+                            <div class="dual-colors form-check form-check-inline">
+                                <label class="form-check-label" for="rakdos">Rakdos</label>
+                                <input class="form-check-input" type="checkbox" id="rakdos" name="q" value="MTG Rakdos">
+                            </div>
+                            <div class="dual-colors form-check form-check-inline">
+                                <label class="form-check-label" for="gruul">Gruul</label>
+                                <input class="form-check-input" type="checkbox" id="gruul" name="q" value="MTG Gruul">
+                            </div>
+                            <div class="dual-colors form-check form-check-inline">
+                                <label class="form-check-label" for="selesnya">Selesnya</label>
+                                <input class="form-check-input" type="checkbox" id="selesnya" name="q"
+                                    value="MTG Selesnya">
+                            </div>
+                            <div class="dual-colors form-check form-check-inline">
+                                <label class="form-check-label" for="orzhov">Orzhov</label>
+                                <input class="form-check-input" type="checkbox" id="orzhov" name="q" value="MTG Orzhov">
+                            </div>
+                            <div class="dual-colors form-check form-check-inline">
+                                <label class="form-check-label" for="izzet">Izzet</label>
+                                <input class="form-check-input" type="checkbox" id="izzet" name="q" value="MTG Izzet">
+                            </div>
+                            <div class="dual-colors form-check form-check-inline">
+                                <label class="form-check-label" for="golgari">Golgari</label>
+                                <input class="form-check-input" type="checkbox" id="golgari" name="q"
+                                    value="MTG Golgari">
+                            </div>
+                            <div class="dual-colors form-check form-check-inline">
+                                <label class="form-check-label" for="boros">Boros</label>
+                                <input class="form-check-input" type="checkbox" id="boros" name="q" value="MTG Boros">
+                            </div>
+                            <div class="dual-colors form-check form-check-inline">
+                                <label class="form-check-label" for="simic">Simic</label>
+                                <input class="form-check-input" type="checkbox" id="simic" name="q" value="MTG Simic">
+                            </div>
                         </div>
                         <div>
                             <!--Tri color checkboxes.-->
-                            <label for="bant">Bant</label><input type="checkbox" id="bant" name="q" value="MTG Bant">
-
-                            <label for="esper">Esper</label><input type="checkbox" id="esper" name="q"
-                                value="MTG Esper">
-
-                            <label for="grixis">Grixis</label><input type="checkbox" id="grixis" name="q"
-                                value="MTG Grixis">
-
-                            <label for="jund">Jund</label><input type="checkbox" id="jund" name="q" value="MTG Jund">
-
-                            <label for="naya">Naya</label><input type="checkbox" id="naya" name="q" value="MTG Naya">
-
-                            <label for="azban">Azban</label><input type="checkbox" id="azban" name="q"
-                                value="MTG Azban">
-
-                            <label for="jeskai">Jeskai</label><input type="checkbox" id="jeskai" name="q"
-                                value="MTG Jeskai">
-
-                            <label for="sultai">Sultai</label><input type="checkbox" id="sultai" name="q"
-                                value="MTG Sultai">
-
-                            <label for="mardu">Mardu</label><input type="checkbox" id="mardu" name="q"
-                                value="MTG Mardu">
-
-                            <label for="temur">Temur</label><input type="checkbox" id="temur" name="q"
-                                value="MTG Temur">
+                            <div class="tri-colors form-check form-check-inline">
+                                <label class="form-check-label" for="bant">Bant</label>
+                                <input class="form-check-input" type="checkbox" id="bant" name="q" value="MTG Bant">
+                            </div>
+                            <div class="dual-colors form-check form-check-inline">
+                                <label class="form-check-label" for="esper">Esper</label>
+                                <input class="form-check-input" type="checkbox" id="esper" name="q" value="MTG Esper">
+                            </div>
+                            <div class="dual-colors form-check form-check-inline">
+                                <label class="form-check-label" for="grixis">Grixis</label>
+                                <input class="form-check-input" type="checkbox" id="grixis" name="q" value="MTG Grixis">
+                            </div>
+                            <div class="dual-colors form-check form-check-inline">
+                                <label class="form-check-label" for="jund">Jund</label>
+                                <input class="form-check-input" type="checkbox" id="jund" name="q" value="MTG Jund">
+                            </div>
+                            <div class="dual-colors form-check form-check-inline">
+                                <label class="form-check-label" for="naya">Naya</label>
+                                <input class="form-check-input" type="checkbox" id="naya" name="q" value="MTG Naya">
+                            </div>
+                            <div class="dual-colors form-check form-check-inline">
+                                <label class="form-check-label" for="azban">Azban</label>
+                                <input class="form-check-input" type="checkbox" id="azban" name="q" value="MTG Azban">
+                            </div>
+                            <div class="dual-colors form-check form-check-inline">
+                                <label class="form-check-label" for="jeskai">Jeskai</label>
+                                <input class="form-check-input" type="checkbox" id="jeskai" name="q" value="MTG Jeskai">
+                            </div>
+                            <div class="dual-colors form-check form-check-inline">
+                                <label class="form-check-label" for="sultai">Sultai</label>
+                                <input class="form-check-input" type="checkbox" id="sultai" name="q" value="MTG Sultai">
+                            </div>
+                            <div class="dual-colors form-check form-check-inline">
+                                <label class="form-check-label" for="mardu">Mardu</label>
+                                <input class="form-check-input" type="checkbox" id="mardu" name="q" value="MTG Mardu">
+                            </div>
+                            <div class="dual-colors form-check form-check-inline">
+                                <label class="form-check-label" for="temur">Temur</label>
+                                <input class="form-check-input" type="checkbox" id="temur" name="q" value="MTG Temur">
+                            </div>
                         </div>
                         <button type="submit">Submit to Reddit</button>
                     </form>
@@ -310,5 +349,10 @@
                 </ul>
             </nav>
         </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+            crossorigin="anonymous"></script>
+        <!--This is where the bootstracp JS script comes in.-->
     </body>
+
 </hmtl>
