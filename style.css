@@ -108,21 +108,21 @@ button:hover {
     transform: translateY(-0.25em) skew(20deg);
     cursor: pointer;
 } /*This is where the "codeAlong" ends.*/
-.fixed-nav {
+/*Replaced my original Nav Bar with one of Bootstrap*/
+/* .fixed-nav {
     margin: auto;
-    /* width: 90%;
-    height: auto; */
     border: 3px solid white;
     display: flex;
     justify-content: space-evenly;
     
     
-}
-@media (max-width: 380px) {
+} */
+/* @media (max-width: 380px) {
     .fixed-nav {
         flex-direction: column;
     }
-}
+} */
+/*This is the end of the orginal Nav Bar I had.*/
 @media (max-width: 380px) {
     table, thead, tbody, th, td, tr {
         display: block;
